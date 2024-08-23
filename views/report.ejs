@@ -10,13 +10,13 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="FUTO Security">
+                <!-- <img src="images/logo.png" alt="FUTO Security"> -->
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="report.html">Report Incident</a></li>
-                <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
-                <li><a href="personnel-dashboard.html">Personnel Dashboard</a></li>
+                <li><a href="/report">Report Incident</a></li>
+                <li><a href="/admin-dashboard">Admin Dashboard</a></li>
+                <li><a href="/personnel-dashboard">Personnel Dashboard</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +31,7 @@
             <!-- Video Element for Streaming -->
             <video id="liveStreamVideo" controls autoplay style="display:none; width: 100%; margin-top: 20px;"></video>
 
-            <form>
+            <form id="reportForm">
                 <label for="location">Location:</label>
                 <input type="text" id="location" name="location" required>
 
@@ -41,16 +41,15 @@
                 <label for="video">Upload Video (optional):</label>
                 <input type="file" id="video" name="video" accept="video/*">
 
-                <button type="submit" class="btn">Submit Report</button>
+                <button type="button" id="reportButton" class="btn">Submit Report</button>
             </form>
         </section>
     </main>
-    <video id="liveStreamVideo" width="320" height="240" autoplay></video>
 
     <footer>
         <p>&copy; 2024 FUTO Security. All rights reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
