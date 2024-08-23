@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Incident - FUTO Security</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="FUTO Security">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html">Report Incident</a></li>
+                <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                <li><a href="personnel-dashboard.html">Personnel Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="report-form">
+            <h2>Report an Incident</h2>
+
+            <!-- Live Stream Button -->
+            <button id="liveStreamBtn" class="btn">Start Live Stream</button>
+
+            <!-- Video Element for Streaming -->
+            <video id="liveStreamVideo" controls autoplay style="display:none; width: 100%; margin-top: 20px;"></video>
+
+            <form>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="video">Upload Video (optional):</label>
+                <input type="file" id="video" name="video" accept="video/*">
+
+                <button type="submit" class="btn">Submit Report</button>
+            </form>
+        </section>
+    </main>
+    <video id="liveStreamVideo" width="320" height="240" autoplay></video>
+
+    <footer>
+        <p>&copy; 2024 FUTO Security. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
